@@ -1,0 +1,25 @@
+﻿@model MvcStarter.App.Dtos.User
+@{
+    ViewBag.Title = "User info";
+}
+
+<div>
+    <h2>
+        User info
+    </h2>
+    @if (Model != null)
+    {
+        <div>
+            User ID = @Model.Id, User name = @Model.Username
+        </div>
+    }
+    else
+    {
+        <div>
+            User not found
+        </div>
+    }
+    <div>
+        <a href="/">Go back</a>
+    </div>
+</div>
